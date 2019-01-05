@@ -1,0 +1,15 @@
+tbody tr {
+  cursor: pointer;
+}
+
+.select2 {
+  width: auto !important;
+}
+
+.form-control.select2{
+  position: unset !important;
+}
+
+li.dropdown-language span.language {
+	color: #c6cfda;
+}
