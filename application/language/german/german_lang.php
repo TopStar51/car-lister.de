@@ -12,6 +12,14 @@ $lang['hi'] = 'Hallo';
 #profile
 $lang['my_profile'] = 'Mein Profil';
 $lang['log_out'] = 'Ausloggen';
+$lang['personal_info'] = 'Persönliche Informationen';
+$lang['change_password'] = 'Ändere das Passwort';
+$lang['profile_err_msg'] = 'Sie haben einige Formfehler. Bitte überprüfen Sie unten.';
+$lang['personal_succ_msg'] = 'Ihr Profil wurde erfolgreich geändert.';
+$lang['password_succ_msg'] = 'Ihr Passwort wurde erfolgreich geändert.';
+$lang['check_cur_pwd'] = 'Bitte überprüfen Sie das aktuelle Passwort';
+$lang['cur_password'] = 'derzeitiges Passwort';
+$lang['new_password'] = 'Neues Kennwort';
 
 #cars
 $lang['cars'] = 'Autos';
