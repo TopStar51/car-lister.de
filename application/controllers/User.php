@@ -121,8 +121,8 @@ class User extends PM_Controller {
         $user_with_same_email = $this->PM_Model->get_info_with_where('users', 'email = "'.$data['email'].'"');
 
         if (isset($user_with_same_email)) {
-            $response['state'] = $this->lang->line('failed');
-            $response['message'] = $this->lang->line('email_duplicated');
+            $response['state'] = _l('failed');
+            $response['message'] = _l('email_duplicated');
             $this->load_json($response);
             return;
         }
@@ -138,7 +138,7 @@ class User extends PM_Controller {
         }
         else
         {
-            $response['message'] = $this->lang->line('user_create_err');
+            $response['message'] = _l('user_create_err');
         }
 
         $this->load_json($response);

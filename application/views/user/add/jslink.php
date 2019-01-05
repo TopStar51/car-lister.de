@@ -30,7 +30,7 @@
 
             //display error alert on form submit
             invalidHandler: function(event, validator) {
-                swal("<?=$this->lang->line('submit_error')?>");
+                swal("<?=_l('submit_error')?>");
             },
 
             submitHandler: function (form) {

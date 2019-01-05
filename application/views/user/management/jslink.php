@@ -97,7 +97,7 @@
                 var nRow = $(this).parents('tr')[0];
                 var input_id = $('.user-id', nRow).val();
 
-                if (confirm('<?=$this->lang->line('del_question')?>')) {
+                if (confirm('<?=_l('del_question')?>')) {
                     process_ajax('',
                         '<?=site_url('user/ajax_delete_user')?>',
                         {
@@ -139,10 +139,10 @@
                 $('#info_address').val(input_address);
 
                 if(input_status == '1') {
-                    $("#info_status").text("<?=$this->lang->line('active')?>");
+                    $("#info_status").text("<?=_l('active')?>");
                 }
                 else {
-                    $("#info_status").text("<?=$this->lang->line('inactive')?>");
+                    $("#info_status").text("<?=_l('inactive')?>");
                 }
                 $('#m_user_info_modal').modal('show');
             })
@@ -182,7 +182,7 @@
 
                 //display error alert on form submit
                 invalidHandler: function(event, validator) {
-                    swal("<?=$this->lang->line('submit_error')?>");
+                    swal("<?=_l('submit_error')?>");
                 },
 
                 submitHandler: function (form) {

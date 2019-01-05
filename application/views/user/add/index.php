@@ -5,7 +5,7 @@
             <div class="portlet-title">
                 <div class="caption">
                     <i class="icon-settings font-dark"></i>
-                    <span class="caption-subject font-dark sbold uppercase"><?=_l('add_user')?></span>
+                    <span class="caption-subject font-dark sbold"><?=_l('add_user')?></span>
                 </div>
             </div>
 

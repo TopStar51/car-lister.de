@@ -104,17 +104,17 @@
                         </li>
                         <li class="dropdown dropdown-user">
                             <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                <span class="username username-hide-on-mobile"><?=$this->lang->line('hi')?>, <strong>Nick</strong></span>
+                                <span class="username username-hide-on-mobile"><?=_l('hi')?>, <strong>Nick</strong></span>
                                 <i class="fa fa-angle-down"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-default">
                                 <li>
                                     <a href="<?=site_url('profile')?>">
-                                        <i class="icon-user"></i><?=$this->lang->line('my_profile')?></a>
+                                        <i class="icon-user"></i><?=_l('my_profile')?></a>
                                 </li>
                                 <li>
                                     <a href="<?=site_url()?>/login/logout">
-                                        <i class="icon-key"></i><?=$this->lang->line('log_out')?></a>
+                                        <i class="icon-key"></i><?=_l('log_out')?></a>
                                 </li>
                             </ul>
                         </li>
@@ -150,14 +150,14 @@
                         <li class="nav-item <?=$this->path[0] == 'cars' ? 'active open' : ''?>">
                             <a href="<?=site_url('cars')?>" class="nav-link nav-toggle">
                                 <i class="icon-pointer"></i>
-                                <span class="title"><?=$this->lang->line('cars')?></span>
+                                <span class="title"><?=_l('cars')?></span>
                                 <?php if($this->path[0]=='cars') echo '<span class="selected"></span>'; ?>
                             </a>
                         </li>
                         <li class="nav-item <?=$this->path[0] == 'parking' ? 'active open' : ''?>">
                             <a href="<?=site_url('parking')?>" class="nav-link nav-toggle">
                                 <i class="icon-like"></i>
-                                <span class="title"><?=$this->lang->line('parking')?></span>
+                                <span class="title"><?=_l('parking')?></span>
                                 <?php if($this->path[0]=='parking') echo '<span class="selected"></span>'; ?>
                             </a>
                         </li>
@@ -165,7 +165,7 @@
                         <li class="nav-item  <?=$this->path[0] == 'user' ? 'active open' : ''?>">
                             <a href="<?=site_url('user/index')?>" class="nav-link nav-toggle">
                                 <i class="icon-user"></i>
-                                <span class="title"><?=$this->lang->line('users')?></span>
+                                <span class="title"><?=_l('users')?></span>
                                 <?php if($this->path[0]=='parking') echo '<span class="selected"></span>'; ?>
                                 <span class="arrow <?=$this->path[0]=='user'? 'open' : '' ?>"></span>
                             </a>
@@ -173,14 +173,14 @@
                                 <li class="nav-item <?=$this->path[0] == 'user' && $this->path[1] =='index' ? 'active open' : ''?>">
                                     <a href="<?=site_url('user/index')?>" class="nav-link ">
                                         <i class="icon-users"></i>
-                                        <span class="title"><?=$this->lang->line('user_management')?></span>
+                                        <span class="title"><?=_l('user_management')?></span>
                                         <?php if($this->path[0]=='user' && $this->path[1]=='index') echo '<span class="selected"></span>'; ?>
                                     </a>
                                 </li>
                                 <li class="nav-item <?=$this->path[0] == 'user' && $this->path[1] =='add' ? 'active open' : ''?>">
                                     <a href="<?=site_url('user/add')?>" class="nav-link ">
                                         <i class="icon-user-follow"></i>
-                                        <span class="title"><?=$this->lang->line('add_user')?></span>
+                                        <span class="title"><?=_l('add_user')?></span>
                                         <?php if($this->path[0]=='user' && $this->path[1]=='add') echo '<span class="selected"></span>'; ?>
                                     </a>
                                 </li>

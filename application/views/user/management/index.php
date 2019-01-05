@@ -5,7 +5,7 @@
             <div class="portlet-title">
                 <div class="caption">
                     <i class="icon-users font-dark"></i>
-                    <span class="caption-subject font-dark sbold"><?=$this->lang->line('user_management')?></span>
+                    <span class="caption-subject font-dark sbold"><?=_l('user_management')?></span>
                 </div>
             </div>
             <div class="portlet-body">
@@ -14,12 +14,12 @@
                         <thead>
                         <tr role="row" class="heading">
                             <th> # </th>
-                            <th> <?=$this->lang->line('name')?> </th>
-                            <th> <?=$this->lang->line('email')?> </th>
-                            <th> <?=$this->lang->line('phone')?> </th>
-                            <th> <?=$this->lang->line('address')?> </th>
-                            <th> <?=$this->lang->line('status')?> </th>
-                            <th> <?=$this->lang->line('actions')?> </th>
+                            <th> <?=_l('name')?> </th>
+                            <th> <?=_l('email')?> </th>
+                            <th> <?=_l('phone')?> </th>
+                            <th> <?=_l('address')?> </th>
+                            <th> <?=_l('status')?> </th>
+                            <th> <?=_l('actions')?> </th>
                         </tr>
                         <tr role="row" class="filter">
                             <td>
@@ -35,16 +35,16 @@
                                 <input type="text" class="form-control form-filter input-sm" name="address"> </td>
                             <td>
                                 <select name="filter_status" class="form-control form-filter selectpicker input-sm">
-                                    <option value=""><?=$this->lang->line('select_all')?></option>
-                                    <option value="1"><?=$this->lang->line('active')?></option>
-                                    <option value="0"><?=$this->lang->line('inactive')?></option>
+                                    <option value=""><?=_l('select_all')?></option>
+                                    <option value="1"><?=_l('active')?></option>
+                                    <option value="0"><?=_l('inactive')?></option>
                                 </select>
                             </td>
                             <td>
                                 <button class="btn btn-sm green btn-outline filter-submit margin-bottom">
-                                    <i class="fa fa-search"></i><?=$this->lang->line('search')?></button>
+                                    <i class="fa fa-search"></i><?=_l('search')?></button>
                                 <button class="btn btn-sm red btn-outline filter-cancel">
-                                    <i class="fa fa-times"></i><?=$this->lang->line('reset')?></button>
+                                    <i class="fa fa-times"></i><?=_l('reset')?></button>
                             </td>
                         </tr>
                         </thead>
@@ -62,7 +62,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="modal_title">
-                    <?=$this->lang->line('edit_user_info')?>
+                    <?=_l('edit_user_info')?>
                 </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">
@@ -77,7 +77,7 @@
                             <div class="form-group m-form__group row">
                                 <div class="col-lg-12">
                                     <label class="form-control-label">
-                                        * <?=$this->lang->line('name')?>:
+                                        * <?=_l('name')?>:
                                     </label>
                                     <input type="hidden" id="user_id" name="uid" />
                                     <input type="text" id="user_name" name="name" class="form-control m-input" placeholder="Jackson William" value="">
@@ -86,7 +86,7 @@
                             <div class="form-group m-form__group row">
                                 <div class="col-lg-12">
                                     <label class="form-control-label">
-                                        * <?=$this->lang->line('email')?>:
+                                        * <?=_l('email')?>:
                                     </label>
                                     <input type="text" id="user_email" name="email" class="form-control m-input" placeholder="jackson@gmail.com" value="">
                                 </div>
@@ -94,7 +94,7 @@
                             <div class="form-group m-form__group row">
                                 <div class="col-lg-12">
                                     <label class="form-control-label">
-                                        * <?=$this->lang->line('phone')?>:
+                                        * <?=_l('phone')?>:
                                     </label>
                                     <input type="text" id="user_phone" name="phone" class="form-control m-input" placeholder="1-(555)-555-5555" value="">
                                 </div>
@@ -102,7 +102,7 @@
                             <div class="form-group m-form__group row">
                                 <div class="col-lg-12">
                                     <label class="form-control-label">
-                                        * <?=$this->lang->line('address')?>:
+                                        * <?=_l('address')?>:
                                     </label>
                                     <input type="text" id="user_address" name="address" class="form-control m-input" placeholder="Probe Adresse" value="">
                                 </div>
@@ -110,11 +110,11 @@
                             <div class="form-group m-form__group row">
                                 <div class="col-lg-12">
                                     <label class="form-control-label">
-                                        * <?=$this->lang->line('status')?>:
+                                        * <?=_l('status')?>:
                                     </label>
                                     <select id="user_status" name="user_status" class="form-control selectpicker form-filter input-sm">
-                                        <option value="1"><?=$this->lang->line('active')?></option>
-                                        <option value="0"><?=$this->lang->line('inactive')?></option>
+                                        <option value="1"><?=_l('active')?></option>
+                                        <option value="0"><?=_l('inactive')?></option>
                                     </select>
                                 </div>
                             </div>
@@ -125,10 +125,10 @@
                             <div class="row">
                                 <div class="col-lg-9 ml-lg-auto">
                                     <button type="submit" class="btn btn-primary">
-                                        <?=$this->lang->line('save_btn')?>
+                                        <?=_l('save_btn')?>
                                     </button>
                                     <button type="reset" class="btn btn-secondary" data-dismiss="modal">
-                                        <?=$this->lang->line('cancel_btn')?>
+                                        <?=_l('cancel_btn')?>
                                     </button>
                                 </div>
                             </div>
@@ -145,7 +145,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="modal_title">
-                    <?=$this->lang->line('user_info')?>
+                    <?=_l('user_info')?>
                 </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">
@@ -189,7 +189,7 @@
                         <div class="row">
                             <div class="col-lg-9 ml-lg-auto">
                                 <button type="reset" class="btn btn-secondary" data-dismiss="modal">
-                                    <?=$this->lang->line('close_btn')?>
+                                    <?=_l('close_btn')?>
                                 </button>
                             </div>
                         </div>
