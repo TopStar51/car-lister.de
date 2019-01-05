@@ -1,0 +1,51 @@
+<?php
+
+#common
+$lang['save_btn'] = 'Save';
+$lang['cancel_btn'] = 'Cancel';
+$lang['close_btn'] = 'Close';
+$lang['yes_btn'] = 'Yes';
+$lang['no_btn'] = 'No';
+$lang['hi'] = 'Hi';
+
+#profile
+$lang['my_profile'] = 'My Profile';
+$lang['log_out'] = 'Log Out';
+
+#cars
+$lang['cars'] = 'Cars';
+
+#parking
+$lang['parking'] = 'Parking';
+
+#users
+$lang['users'] = 'Users';
+$lang['user_management'] = 'User Management';
+$lang['add_user'] = 'Add User';
+$lang['name'] = 'Name';
+$lang['email'] = 'Email';
+$lang['password'] = 'Password';
+$lang['confirm_password'] = 'Confirm Password';
+$lang['phone'] = 'Phone';
+$lang['address'] = 'Address';
+$lang['status'] = 'Status';
+$lang['actions'] = 'Actions';
+$lang['select_all'] = 'Select All';
+$lang['active'] = 'Active';
+$lang['inactive'] = 'Inactive';
+$lang['search'] = 'Search';
+$lang['reset'] = 'Reset';
+$lang['edit_user_info'] = 'Edit User Information';
+$lang['user_info'] = 'User Information';
+
+#error
+$lang['network_error'] = 'Could not complete request. Please check your internet connection';
+$lang['no_records'] = 'No records found to show';
+$lang['no_matching'] = 'No matching records found';
+$lang['no_data'] = 'No data available in table';
+$lang['submit_error'] = 'There are some errors in your submission. Please correct them.';
+$lang['failed'] = 'Failed';
+$lang['email_duplicated'] = 'Email Duplicated';
+$lang['user_create_err'] = 'Failed to create new user';
+#question
+$lang['del_question'] = 'Do you really delete this user?';
