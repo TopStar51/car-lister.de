@@ -23,6 +23,12 @@ $lang['new_password'] = 'Neues Kennwort';
 
 #cars
 $lang['cars'] = 'Autos';
+$lang['place'] = 'Ort';
+$lang['color'] = 'Farbe';
+$lang['construction'] = 'Aufbau';
+$lang['fuel'] = 'Kraftstoff';
+$lang['petrol'] = 'Benzin';
+
 
 #parking
 $lang['parking'] = 'Parkplatz';

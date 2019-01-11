@@ -39,7 +39,7 @@ class Login extends PM_Controller {
         $this->user_session_create($user);
 
         //Set Default Language
-        $this->session->set_userdata('language', 'DE');
+        $this->session->set_userdata('language', 'EN');
 
         $response['state'] = 'success';
         $response['url'] = 'cars';

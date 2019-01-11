@@ -1,15 +1,11 @@
 <div class="row">
-    <div class="col-md-12">
-        <!-- Begin: Demo Datatable 1 -->
-        <div class="portlet light portlet-fit portlet-datatable bordered">
-            <div class="portlet-title">
-                <div class="caption">
-                    <i class="icon-settings font-dark"></i>
-                    <span class="caption-subject font-dark sbold uppercase">Cars</span>
-                </div>
-            </div>
-            <div class="portlet-body">
-            </div>
-        </div>
+    <div class="col-md-6">
+        <div class="car-list"></div>
+    </div>
+    <div class="col-md-6">
     </div>
 </div>
+
+<script type="text/javascript">
+    var last_id = "<?=$kleinanzeigen_last_id?>";
+</script>

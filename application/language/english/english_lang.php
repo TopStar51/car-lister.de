@@ -23,7 +23,7 @@ $lang['new_password'] = 'New Password';
 $lang['cars'] = 'Cars';
 
 #parking
-$lang['parking'] = 'Parking';
+$lang['parking_place'] = 'Parking Place';
 
 #users
 $lang['users'] = 'Users';

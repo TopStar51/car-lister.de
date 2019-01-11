@@ -56,7 +56,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <div class="content">
             <!-- BEGIN LOGIN FORM -->
             <form class="login-form" action="javascript:;" method="post">
-                <h3 class="form-title"><strong>Car-lister.de Login</strong></h3>
+                <div class="form-title" style="text-align: center"><img src="<?=base_url()?>assets/custom/img/login_logo1.png" alt="login_logo" width="100%"/></div>
                 <div class="alert alert-danger display-hide">
                     <button class="close" data-close="alert"></button>
                     <span> Enter any email and password. </span>

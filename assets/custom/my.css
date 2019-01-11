@@ -13,3 +13,8 @@ tbody tr {
 li.dropdown-language span.language {
 	color: #c6cfda;
 }
+
+img.icon-car, img.icon-parking, img.icon-user {
+	width: 24px;
+	height: 20px;
+}

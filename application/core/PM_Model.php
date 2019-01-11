@@ -21,11 +21,11 @@ class PM_Model extends CI_Model
         return $this->db->get()->row()->sumVal;
     }
 
-    public function get_max_value($tName, $fName, $wStr) {
+    public function get_max_value($tName, $fName, $wStr, $isStructured = true) {
         $this->db->select('MAX('.$fName.') AS maxVal');
         $this->db->from($tName);
         if (!empty($wStr)) $this->db->where($wStr);
-        $this->db->where('is_delete', '0');
+        if ($isStructured) $this->db->where('is_delete', '0');
         return $this->db->get()->row()->maxVal;
     }
 

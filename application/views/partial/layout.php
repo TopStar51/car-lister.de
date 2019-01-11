@@ -5,7 +5,6 @@
 <html lang="en">
 <!--<![endif]-->
 <!-- BEGIN HEAD -->
-<!-- BEGIN HEAD -->
 <head>
     <meta charset="utf-8" />
     <title>Car-lister.de</title>
@@ -55,7 +54,6 @@
         var BASE_URL = "<?php echo base_url('') ?>";
     </script>
 
-
     <!-- END THEME LAYOUT STYLES -->
     <link rel="shortcut icon" href="<?php echo base_url('assets'); ?>/favicon.ico" /> 
 </head>
@@ -71,7 +69,7 @@
                 <!-- BEGIN LOGO -->
                 <div class="page-logo">
                     <a href="<?php site_url('');?>">
-                        <img src="<?php echo base_url('assets'); ?>/layouts/layout/img/logo.png" alt="logo" class="logo-default" /> 
+                        <img src="<?php echo base_url('assets'); ?>/layouts/layout/img/logo-2.png" alt="logo" class="logo-default" style="margin-top: 12px"/> 
                     </a>
                     <div class="menu-toggler sidebar-toggler">
                         <span></span>
@@ -98,7 +96,7 @@
                                 </li>
                                 <li>
                                     <a href="<?=site_url('language/switch_lang/DE')?>">
-                                    Deutsche</a>
+                                    Deutsch</a>
                                 </li>
                             </ul>
                         </li>
@@ -149,23 +147,23 @@
                         <!-- END SIDEBAR TOGGLER BUTTON -->
                         <li class="nav-item <?=$this->path[0] == 'cars' ? 'active open' : ''?>">
                             <a href="<?=site_url('cars')?>" class="nav-link nav-toggle">
-                                <i class="icon-pointer"></i>
-                                <span class="title"><?=_l('cars')?></span>
+                                <img src="<?=base_url()?>assets/custom/img/icon_car.png" alt="icon-car" class="icon-car" />
+                                <span class="title bold"><?=_l('cars')?></span>
                                 <?php if($this->path[0]=='cars') echo '<span class="selected"></span>'; ?>
                             </a>
                         </li>
                         <li class="nav-item <?=$this->path[0] == 'parking' ? 'active open' : ''?>">
                             <a href="<?=site_url('parking')?>" class="nav-link nav-toggle">
-                                <i class="icon-like"></i>
-                                <span class="title"><?=_l('parking')?></span>
+                                <img src="<?=base_url()?>assets/custom/img/icon_parking.png" alt="icon-parking" class="icon-parking" />
+                                <span class="title bold"><?=_l('parking_place')?></span>
                                 <?php if($this->path[0]=='parking') echo '<span class="selected"></span>'; ?>
                             </a>
                         </li>
                         <?php if($this->user_type == 'ADMIN') { ?>
                         <li class="nav-item  <?=$this->path[0] == 'user' ? 'active open' : ''?>">
                             <a href="<?=site_url('user/index')?>" class="nav-link nav-toggle">
-                                <i class="icon-user"></i>
-                                <span class="title"><?=_l('users')?></span>
+                                <img src="<?=base_url()?>assets/custom/img/icon_user.png" alt="icon-user" class="icon-user" />
+                                <span class="title bold"><?=_l('users')?></span>
                                 <?php if($this->path[0]=='parking') echo '<span class="selected"></span>'; ?>
                                 <span class="arrow <?=$this->path[0]=='user'? 'open' : '' ?>"></span>
                             </a>
