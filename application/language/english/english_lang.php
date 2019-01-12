@@ -56,3 +56,17 @@ $lang['email_duplicated'] = 'Email Duplicated';
 $lang['user_create_err'] = 'Failed to create new user';
 #question
 $lang['del_question'] = 'Do you really delete this user?';
+
+#car
+$lang['price'] = 'Price';
+$lang['no_price'] = 'No Price';
+
+#detail
+$lang['city'] = 'City';
+$lang['timestamp'] = 'TimeStamp';
+$lang['idc'] = 'IDC';
+$lang['maker'] = 'Manufacturer';
+$lang['model'] = 'Model';
+$lang['KM'] = 'KM';
+$lang['EZ'] = 'EZ';
+$lang['to_car_list'] = 'To List';

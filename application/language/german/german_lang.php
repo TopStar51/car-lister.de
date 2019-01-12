@@ -64,3 +64,17 @@ $lang['email_duplicated'] = 'E-Mail dupliziert';
 $lang['user_create_err'] = 'Konnte keinen neuen Benutzer erstellen';
 #question
 $lang['del_question'] = 'Löschen Sie diesen Benutzer wirklich?';
+
+#car
+$lang['price'] = 'Preis';
+$lang['no_price'] = 'No Preis';
+
+#detail
+$lang['city'] = 'Ort';
+$lang['timestamp'] = 'Erstellungsdatum';
+$lang['idc'] = 'Anzeigennummer';
+$lang['maker'] = 'Marke';
+$lang['model'] = 'Modell';
+$lang['KM'] = 'Kilometerstand';
+$lang['EZ'] = 'Erstzulassungsjahr';
+$lang['to_car_list'] ='To List';

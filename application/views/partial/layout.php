@@ -82,8 +82,24 @@
                 </a>
                 <!-- END RESPONSIVE MENU TOGGLER -->
                 <!-- BEGIN TOP NAVIGATION MENU -->
+                <div>
                 <div class="top-menu">
                     <ul class="nav navbar-nav pull-right">
+                        <form class="search-form" action="" method="GET">
+                            <div class="input-group">
+                                <input type="text" class="form-control input-sm" placeholder="Search..." name="query">
+                                <span class="input-group-btn">
+                                    <a href="javascript:;" class="btn submit">
+                                        <i class="icon-magnifier"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </form>
+                        <li class="dropdown dropdown-extended dropdown-notification dropdown-dark" id="header_notification_bar">
+                            <a href="javascript:;" class="dropdown-toggle" style="padding: 17px 10px 8px;">
+                                <i class="icon-bell"></i>
+                            </a>
+                        </li>
                         <li class="dropdown dropdown-language">
                             <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" style="margin-right: 30px">
                                 <i class="icon-globe"></i>
@@ -120,6 +136,7 @@
                     </ul>
                 </div>
                 <!-- END TOP NAVIGATION MENU -->
+                </div>
             </div>
             <!-- END HEADER INNER -->
         </div>
@@ -194,7 +211,7 @@
             <!-- BEGIN CONTENT -->
             <div class="page-content-wrapper">
                 <!-- BEGIN CONTENT BODY -->
-                <div class="page-content">
+                <div class="page-content" style="background: lightgray;">
                     <?php
                     foreach ($this->view_list as $view) {
                         $view_page = $view[0];

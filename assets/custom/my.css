@@ -18,3 +18,256 @@ img.icon-car, img.icon-parking, img.icon-user {
 	width: 24px;
 	height: 20px;
 }
+
+.page-sidebar {
+    position: fixed;
+}
+
+.page-sidebar-menu .nav-item a.nav-toggle{
+    color: white !important;
+    background-color: #607c95;
+}
+
+.page-sidebar-menu .nav-item.active a.nav-toggle{
+    background-color: #1a7493 !important;
+}
+
+.my-shadow {
+    box-shadow: 2px 5px 5px gray, -2px 5px 2px gray;
+    border-radius: 5px !important;
+}
+
+table.car-detail > td {
+    padding: 5px;
+}
+
+.car-list {
+    position: initial;
+}
+
+.mt-checkbox {
+    padding-left: 18px !important;
+    margin-bottom: 5px !important;
+}
+
+div.car-item {
+    background: white;
+    margin: 10px 0px; padding: 5px 5px 10px 20px;
+}
+
+/* div.item-header
+    label -> title
+    span -> type
+*/
+@media (min-width: 1024px) {
+    div.item-header {
+        display: flex;
+    }
+    
+    div.item-body {
+        display: flex;
+    }
+    
+    div.car-buttons {
+        right: 0px; bottom: 5px; position: absolute;
+    }
+    
+    img.car-type-logo {
+        margin-top: -15px;
+    }
+    
+    div.item-tail {
+        right:5px; position: relative; display: flex;
+    }
+}
+
+@media (max-width: 1024px) {
+    div.car-buttons {
+        float: right;
+    }
+    
+    img.car-type-logo {
+        margin-top: 2px;
+    }
+}
+
+div.item-header label {
+    /* title */
+    font-weight: bold;
+    font-size: 20px;
+    max-width: 300px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+div.item-header span.type {
+    font-size: 20px;
+    color: gray;
+}
+
+div.item-header span.timestamp {
+    /*float: right;*/ 
+    width: 100%;
+    text-align: right;
+    font-size: 16px; 
+    color: gray;
+}
+
+a.car-avatar img {
+    height: 100%;
+    width: 130px;
+    border: solid 1px;
+    background: lightgray;
+    margin-right: 10px;
+}
+
+label.car-price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+img.car-type-logo {
+    height: 30px;
+}
+
+@media (min-width: 992px) {
+    
+    .page-content-wrapper .page-content {
+        margin-left: 200px !important;
+    }
+
+    .page-sidebar {
+        width: 200px;
+    }
+}
+
+
+
+.mt-checkbox>span {
+    width: 13px;
+    height: 13px;
+    border: solid #333 1px !important;
+    opacity: 1 !important;
+}
+
+.mt-checkbox>span:after {
+    left: 3px;
+    width: 5px;
+    top: auto;
+    border-color: #333 !important;
+}
+
+.padding-5 {
+    padding: 5px;
+}
+
+@media (min-width: 1800px) {
+    .car-preview .btn-to-list {
+        display: none;
+    }
+    
+    div.car-list {
+        width: 50%;
+    }
+    
+    div.car-preview {
+        position: fixed;
+        width: 42vw;
+    }
+}
+
+@media (max-width: 1800px) {
+    div.hide-list {
+        display: none;
+    }
+    
+    div.hide-detail {
+        display: none;
+    }
+    
+    div.car-list {
+        width: 100%;
+    }
+
+    div.div-detail {
+        width: 100%;
+    }
+}
+
+div.car-list, div.div-detail {
+    padding: 5px 15px;
+    float: left;
+}
+
+.car-photo-item {
+    cursor: pointer;
+}
+
+.badge {
+    width: 25px;
+    height: 25px;
+    border-radius: 50% !important;
+}
+
+.badge i {
+    font-size: 13px;
+    margin-left: -2px;
+    margin-top: 3px;
+}
+
+.grey-badge-ring {
+    background-color: #8e8e8e;
+}
+
+.blue-badge-ring {
+    background-color: #3b5791;
+}
+
+.cyan-badge-ring {
+    background-color: #1ba7ea;
+}
+
+.red-badge-ring {
+    background-color: #c00b13;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.car-preview ul {
+    line-height: 10px;
+    /*margin-bottom: 5px;*/
+}
+.car-preview ul li {
+    display: inline-block;
+}
+
+/* carousel - btn */
+
+ .transparent-header #navigation > ul li:hover ul li:hover a:after,
+ .transparent-header #navigation > ul li:hover a:after,
+ .transparent-header #navigation > ul li a.current:after,
+ .compact-list-layout .job-listing:before,
+ .tasks-list-container.compact-list .task-listing:before,
+ .compact-list.freelancers-list-layout .freelancer:before,
+ .accordion-header,
+ .tabs-header,
+ .intro-search-field .field-title,
+ .category-box:hover,
+ .photo-box:hover:before,
+ .photo-box.small .photo-box-content span,
+ .slick-prev:hover,
+ .slick-next:hover,
+ .bootstrap-select.btn-group .bs-actionsbox div button:hover {
+     background:#2a41e8;
+}
+ .uploadButton .uploadButton-button,
+ .pricing-plan .button {
+     color:#2a41e8;
+     border:1px solid #2a41e8;
+}
+

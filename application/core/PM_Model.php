@@ -58,6 +58,14 @@ class PM_Model extends CI_Model
         $this->db->where('id', $fNo);
         return $this->db->get()->row();
     }
+    
+    public function get_info_arr($tName, $fNo, $sStr = "*", $isStructured = true) {
+        $this->db->select($sStr);
+        $this->db->from($tName);
+        if ($isStructured) $this->db->where('is_delete', '0');
+        $this->db->where('id', $fNo);
+        return $this->db->get()->row_array();
+    }
 
     public function get_info_with_where($tName, $wStr, $sStr = "*", $isStructured = true) {
         $this->db->select($sStr);
