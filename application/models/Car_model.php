@@ -121,7 +121,7 @@ class Car_Model extends PM_Model {
     }
     
     function detail($car_id, $car_type) {
-        return $this->get_info_arr($car_type, $car_id);
+        return $this->get_info_arr($car_type, $car_id , '*' ,false);
     }
     
     function add_to_delete($user_id, $car_id, $car_type) {
