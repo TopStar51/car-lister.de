@@ -6,8 +6,15 @@
         <label style="font-weight: bold; font-size: 24px; color: yellowgreen;"><?=_l('price')?>: <?=get_car_price($carInfo)?> VB</label>
     </div>
     <div class="my-shadow" style="background: white; padding: 10px;">
+        <?php 
+            $photos = get_car_photos($carInfo);
+            if (count($photos) > 0) {
+                $first_photo = $photos[0];
+        ?>
         <div style="margin-bottom: 25px;">
-            <img id="img-selected" style="border: solid 1px gray; min-height: 350px; width: 100%;">
+            <div style="display: flex;">
+                <img id="img-selected" <?=isset($first_photo) ? 'src="'.$first_photo.'"' : ''?> style="border: solid 1px gray; height: 350px; width: auto; margin: auto;">
+            </div>
             <div class="full-width-carousel-fix">
                 <div class="blog-carousel">
                     <!-- carousel here? -->
@@ -17,6 +24,16 @@
                 </div>
             </div>
         </div>
+        <?php
+            } else {
+        ?>
+        <div style="text-align: center; margin: 50px 0px;">
+            <h3><?=_l('no_available_photos')?></h3>
+        </div>
+        <?php
+            }
+        ?>
+        
         <div style="border-bottom: solid 1px lightgray; padding-bottom: 10px;">
             <label style="font-weight: bold; margin-top: 3px;">Details</label>
             <div style="float: right; display: flex;">

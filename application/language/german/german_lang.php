@@ -68,6 +68,10 @@ $lang['del_question'] = 'Löschen Sie diesen Benutzer wirklich?';
 #car
 $lang['price'] = 'Preis';
 $lang['no_price'] = 'No Preis';
+$lang['fuel_type'] = 'Kraftstoff';
+$lang['color'] = 'Farbe';
+$lang['type_of_motor'] = 'Getriebe';
+$lang['num_doors'] = 'AUFBAU';
 
 #detail
 $lang['city'] = 'Ort';

@@ -60,6 +60,14 @@ $lang['del_question'] = 'Do you really delete this user?';
 #car
 $lang['price'] = 'Price';
 $lang['no_price'] = 'No Price';
+$lang['fuel_type'] = 'Fuel Type';
+$lang['color'] = 'Color';
+$lang['KM'] = 'KM';
+$lang['EZ'] = 'EZ';
+$lang['type_of_motor'] = 'Motor Type';
+$lang['num_doors'] = 'Number of Doors';
+$lang['no_photo'] = 'No Photo';
+$lang['no_available_photos'] = 'No Photos Available';
 
 #detail
 $lang['city'] = 'City';
