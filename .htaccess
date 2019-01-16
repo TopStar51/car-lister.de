@@ -1,6 +1,11 @@
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php/$1 [L]
+	#--- Uncomment this line for production or testing server
+	#SetEnv CI_ENV production
+
+	#--- URL rewrite
+	#--- Note: require Rewrite mod enabled (sudo a2enmod rewrite)
+	RewriteEngine On
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ index.php/$1 [L]
 </IfModule>
