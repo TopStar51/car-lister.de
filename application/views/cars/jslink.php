@@ -4,16 +4,16 @@
         show_list();
         var get_car_data = function(){
             $.ajax({
-                    url: '<?=site_url('cars/get_new_data')?>',
-                    method: 'POST',
-                    success: function(resp){
-                        if (resp) {
-                            $('#audio-alarm')[0].play();
-                            $("div.car-list").append(resp);
-                            setTimeout(get_car_data(), 1000)
+                        url: '<?=site_url('cars/get_new_data')?>',
+                        method: 'POST',
+                        success: function(resp){
+                            if (resp) {
+                                $('#audio-alarm')[0].play();
+                                $("div.car-list").append(resp);
+                                 setTimeout(get_car_data(), 1000);
+                            }
                         }
-                    }
-            });
+                });
         };
         get_car_data();
         
@@ -98,30 +98,30 @@
             dots: false,
             arrows: true,
             responsive: [
-                {
-                  breakpoint: 1365,
-                  settings: {
-                        slidesToShow: 5,
-                        dots: false,
-                        arrows: true
-                  }
-                },
-                {
-                  breakpoint: 992,
-                  settings: {
-                        slidesToShow: 3,
-                        dots: false,
-                        arrows: true
-                  }
-                },
-                {
-                  breakpoint: 768,
-                  settings: {
-                        slidesToShow: 2,
-                        dots: true,
-                        arrows: false
-                  }
-                }
+                    {
+                      breakpoint: 1365,
+                      settings: {
+                            slidesToShow: 5,
+                            dots: false,
+                            arrows: true
+                      }
+                    },
+                    {
+                      breakpoint: 992,
+                      settings: {
+                            slidesToShow: 3,
+                            dots: false,
+                            arrows: true
+                      }
+                    },
+                    {
+                      breakpoint: 768,
+                      settings: {
+                            slidesToShow: 2,
+                            dots: true,
+                            arrows: false
+                      }
+                    }
             ]
         });
     }

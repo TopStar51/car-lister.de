@@ -39,13 +39,13 @@
                     '<?=site_url('user/ajax_add_user')?>',
                     $(form).serializeArray(),
                     function (resp) {
-                        showToast('success', 'toast-bottom-full-width', 'Success');
+                        showToast('success', 'toast-bottom-full-width', "<?=_l('success')?>");
                         setTimeout(function() {
                             window.location.href = "<?=base_url('user/index')?>";
                         }, 600);
                     },
                     function (resp) {
-                        showToast('warning', 'toast-bottom-full-width', resp.message);
+                        showToast('warning', 'toast-bottom-full-width', "<?=_l('failed')?>");
                     }
                 );
 

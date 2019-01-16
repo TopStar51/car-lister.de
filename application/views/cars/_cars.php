@@ -7,7 +7,16 @@
     </div>
     <div class='item-body'>
         <a href="javascript:detail_car(<?=$carInfo['id']?>, '<?=$carInfo['car_type']?>');" class="car-avatar">
-            <img src="<?=get_car_img($carInfo)?>">
+            <?php 
+            $car_img = get_car_img($carInfo);
+            if ($car_img) {
+            ?>
+            <img src="<?=$car_img?>">
+            <?php 
+            } else {
+            ?>
+            <div><span><?=_l('No Photo')?></span></div>
+            <?php } ?>
         </a>
         <div style="margin-right: 10px; min-width: 160px;">
             <label class="car-price"><?=get_car_price($carInfo)?></label>
@@ -18,7 +27,7 @@
             </div>
             <div>
                 <div style="margin-bottom: 5px;"><span><?=get_car_plz($carInfo)?> <?=get_car_city($carInfo)?></span></div>
-                <div style="margin-bottom: 5px;"><span>Tel / handler_nummer</span></div>
+                <div style="margin-bottom: 5px;"><span><?=get_car_option($carInfo, 'seller_phone')?></span></div>
                 <div style="margin-bottom: 5px;"><span>Distance in km</span></div>
             </div>
         </div>
@@ -27,7 +36,7 @@
                 <?php
                 foreach (car_options() as $option) { 
                 ?>
-                <span style="font-weight: bold;"><?=$option?>:</span>
+                <span style="font-weight: bold;"><?=_l($option)?>:</span>
                 <span><?=get_car_option($carInfo, $option)?></span>
                 <?php
                 }

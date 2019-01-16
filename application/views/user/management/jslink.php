@@ -85,7 +85,7 @@
                 $('#user_email').val(input_email);
                 $('#user_phone').val(input_phone);
                 $('#user_address').val(input_address);
-                $('#user_status').val(input_status);
+                $('#user_status').val(input_status).change();
                 $('#user_id').val(input_id);
 
                 $('#m_user_edit_modal').modal('show');
@@ -104,13 +104,13 @@
                             id: input_id
                         },
                         function (resp) {
-                            showToast('success', 'toast-bottom-full-width', 'Success');
+                            showToast('success', 'toast-bottom-full-width', "<?=_l('success')?>");
                             setTimeout(function () {
                                 location.reload();
                             }, 600);
                         },
                         function (resp) {
-                            showToast('warning', 'toast-bottom-full-width', resp.message);
+                            showToast('warning', 'toast-bottom-full-width', "<?=_l('failed')?>");
                         }
                     );
                 }
@@ -191,13 +191,13 @@
                         '<?=site_url('user/ajax_update_user')?>',
                         $(form).serializeArray(),
                         function (resp) {
-                            showToast('success', 'toast-bottom-full-width', 'Success');
+                            showToast('success', 'toast-bottom-full-width', "<?=_l('success')?>");
                             setTimeout(function() {
                                 location.reload();
                             }, 600);
                         },
                         function (resp) {
-                            showToast('warning', 'toast-bottom-full-width', resp.message);
+                            showToast('warning', 'toast-bottom-full-width', "<?=_l('failed')?>");
                         }
                     );
 

@@ -122,6 +122,19 @@ a.car-avatar img {
     margin-right: 10px;
 }
 
+a.car-avatar div {
+    height: 100%;
+    width: 130px;
+    border: solid 1px;
+    background: lightgray;
+    margin-right: 10px;
+    display: flex;
+}
+
+a.car-avatar div span{
+    margin: auto;
+}
+
 label.car-price {
     font-size: 20px;
     font-weight: bold;
@@ -202,6 +215,7 @@ div.car-list, div.div-detail {
 
 .car-photo-item {
     cursor: pointer;
+    height: 60px !important;
 }
 
 .badge {

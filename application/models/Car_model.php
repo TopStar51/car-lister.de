@@ -15,7 +15,7 @@ class Car_Model extends PM_Model {
     public $table1 = 'autos_kleinanzeigen';
     public $table2 = 'autos_mobile';
     public $table3 = 'autos_scout24';
-    public $max_count = 5;//this is when there's thousands of cars, we only need 5 ~ 10 cars to show, not all of them at once
+    public $max_count = 0;//this is when there's thousands of cars, we only need 5 ~ 10 cars to show, not all of them at once
     
     //put your code here
     function __construct() {
@@ -30,8 +30,9 @@ class Car_Model extends PM_Model {
             $this->db->select('*, \''.$last_id['car_type'].'\' as car_type')->
                     from($last_id['car_type'])
                     ->where('id > '.$last_id['last_id'])
-                    ->order_by('id')
-                    ->limit($this->max_count);
+                    ->order_by('id');
+            if ($this->max_count > 0)
+                $this->db->limit($this->max_count);
 
             if (!empty($search)) {
                 $table = $last_id['car_type'];
@@ -121,7 +122,7 @@ class Car_Model extends PM_Model {
     }
     
     function detail($car_id, $car_type) {
-        return $this->get_info_arr($car_type, $car_id , '*' ,false);
+        return $this->get_info_arr($car_type, $car_id, '*', false);
     }
     
     function add_to_delete($user_id, $car_id, $car_type) {
