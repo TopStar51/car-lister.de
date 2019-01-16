@@ -64,7 +64,8 @@ $lang['email_duplicated'] = 'E-Mail dupliziert';
 $lang['user_create_err'] = 'Konnte keinen neuen Benutzer erstellen';
 #question
 $lang['del_question'] = 'Löschen Sie diesen Benutzer wirklich?';
-
+#success
+$lang['success'] = 'Erfolg';
 #car
 $lang['price'] = 'Preis';
 $lang['no_price'] = 'No Preis';

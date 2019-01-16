@@ -57,6 +57,8 @@ $lang['user_create_err'] = 'Failed to create new user';
 #question
 $lang['del_question'] = 'Do you really delete this user?';
 
+#success
+$lang['success'] = 'Success';
 #car
 $lang['price'] = 'Price';
 $lang['no_price'] = 'No Price';

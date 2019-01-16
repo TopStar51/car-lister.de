@@ -14,4 +14,5 @@ function _l($key){
 	$ci = & get_instance();
 	echo $ci->lang->line($key);
 }
+
 ?>
