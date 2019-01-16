@@ -6,6 +6,8 @@ $lang['cancel_btn'] = 'Cancel';
 $lang['close_btn'] = 'Close';
 $lang['yes_btn'] = 'Yes';
 $lang['no_btn'] = 'No';
+$lang['edit_btn'] = 'Edit';
+$lang['delete_btn'] = 'Delete';
 $lang['hi'] = 'Hi';
 
 #profile
@@ -23,7 +25,7 @@ $lang['new_password'] = 'New Password';
 $lang['cars'] = 'Cars';
 
 #parking
-$lang['parking_place'] = 'Parking Place';
+$lang['parking_place'] = 'Parking';
 
 #users
 $lang['users'] = 'Users';
@@ -46,19 +48,18 @@ $lang['edit_user_info'] = 'Edit User Information';
 $lang['user_info'] = 'User Information';
 
 #error
-$lang['network_error'] = 'Could not complete request. Please check your internet connection';
-$lang['no_records'] = 'No records found to show';
-$lang['no_matching'] = 'No matching records found';
-$lang['no_data'] = 'No data available in table';
+$lang['network_err'] = 'Could not complete request. Please check your internet connection';
 $lang['submit_error'] = 'There are some errors in your submission. Please correct them.';
 $lang['failed'] = 'Failed';
 $lang['email_duplicated'] = 'Email Duplicated';
 $lang['user_create_err'] = 'Failed to create new user';
+
 #question
 $lang['del_question'] = 'Do you really delete this user?';
 
 #success
 $lang['success'] = 'Success';
+
 #car
 $lang['price'] = 'Price';
 $lang['no_price'] = 'No Price';
@@ -80,3 +81,15 @@ $lang['model'] = 'Model';
 $lang['KM'] = 'KM';
 $lang['EZ'] = 'EZ';
 $lang['to_car_list'] = 'To List';
+
+#datatable
+$lang['no_records_found'] = 'No records found to show';
+$lang['no_matching_records'] = 'No matching records found';
+$lang['no_data_available'] = 'No data available in table';
+$lang['page'] = 'Page';
+$lang['records'] = 'Records';
+$lang['view'] = 'View';
+$lang['of'] = 'of';
+$lang['records_selected'] = 'records selected';
+$lang['total'] = 'Total';
+$lang['loading'] = 'Loading...';

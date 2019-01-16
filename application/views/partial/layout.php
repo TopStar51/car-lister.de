@@ -270,6 +270,19 @@
 
     <script src="<?=base_url('assets/global/plugins/select2/js/select2.full.min.js')?>" type="text/javascript"></script>
 
+    <script type="text/javascript">
+        var total = "<?=_l('total')?>";
+        var records_selected = "<?=_l('records_selected')?>";
+        var network_err = "<?=_l('network_err')?>";
+        var view = "<?=_l('view')?>";
+        var no_records_found = "<?=_l('no_records_found')?>";
+        var no_data_available = "<?=_l('no_data_available')?>";
+        var no_matching_records = "<?=_l('no_matching_records')?>";
+        var page = "<?=_l('page')?>";
+        var records = "<?=_l('records')?>";
+        var of = "<?=_l('of')?>";
+        var loading = "<?=_l('loading')?>";
+    </script>
     <?php
 
     foreach ($this->custom_js_list as $js) {

@@ -12,7 +12,7 @@ function gf_html_load_css($css)
 
 function _l($key){
 	$ci = & get_instance();
-	echo $ci->lang->line($key);
+	return $ci->lang->line($key);
 }
 
 ?>

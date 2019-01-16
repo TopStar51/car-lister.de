@@ -53,10 +53,10 @@ class User extends PM_Controller {
             $user_info = $user_list[$i];
 
             if($user_info['is_active']) {
-                $status = 'Active';
+                $status = _l('active');
                 $color="green";
             } else {
-                $status = 'Inactive';
+                $status = _l('inactive');
                 $color = "yellow";
             }
             $records["data"][] = array(
@@ -66,8 +66,8 @@ class User extends PM_Controller {
                 $user_info['telefon'].'<input type="hidden" class="user-phone" value="'.$user_info['telefon'].'"/>',
                 $user_info['adresse'].'<input type="hidden" class="user-address" value="'.$user_info['adresse'].'"/>',
                 '<button type="button" class="btn btn-circle '.$color.' btn-outline">'.$status.'</button>'.'<input type="hidden" class="user-status" value="'.$user_info['is_active'].'"/>',
-                '<a href="javascript:;" class="btn btn-sm btn-outline btn-primary edit"><i class="fa fa-edit"></i> Edit </a>
-                <a href="javascript:;" class="btn btn-sm btn-outline btn-danger delete"><i class="fa fa-remove"></i> Delete </a>
+                '<a href="javascript:;" class="btn btn-sm btn-outline btn-primary edit"><i class="fa fa-edit"></i>'._l("edit_btn").'</a>
+                <a href="javascript:;" class="btn btn-sm btn-outline btn-danger delete"><i class="fa fa-remove"></i>'._l("delete_btn").'</a>
                 <input type="hidden" class="user-id" value="'.$user_info['id'].'" />'
             );
         }

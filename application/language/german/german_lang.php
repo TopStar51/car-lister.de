@@ -6,7 +6,8 @@ $lang['cancel_btn'] = 'Stornieren';
 $lang['close_btn'] = 'Schließen';
 $lang['yes_btn'] = 'Ja';
 $lang['no_btn'] = 'Nein';
-
+$lang['edit_btn'] = 'Bearbeiten';
+$lang['delete_btn'] = 'Löschen';
 $lang['hi'] = 'Hallo';
 
 #profile
@@ -29,13 +30,12 @@ $lang['construction'] = 'Aufbau';
 $lang['fuel'] = 'Kraftstoff';
 $lang['petrol'] = 'Benzin';
 
-
 #parking
-$lang['parking'] = 'Parkplatz';
+$lang['parking_place'] = 'Parkplatz';
 
 #users
 $lang['users'] = 'Benutzer';
-$lang['user_management'] = 'Benutzerverwaltung';
+$lang['user_management'] = 'Verwaltung';
 $lang['add_user'] = 'Nutzer hinzufügen';
 $lang['name'] = 'Name';
 $lang['email'] = 'Email';
@@ -54,10 +54,7 @@ $lang['edit_user_info'] = 'Benutzerinformationen bearbeiten';
 $lang['user_info'] = 'Nutzerinformation';
 
 #error
-$lang['network_error'] = 'Anforderung konnte nicht abgeschlossen werden. Bitte überprüfe deine Internetverbindung';
-$lang['no_records'] = 'Es wurden keine Datensätze gefunden';
-$lang['no_matching'] = 'Keine übereinstimmenden Aufzeichnungen gefunden';
-$lang['no_data'] = 'Keine Daten in der Tabelle verfügbar';
+$lang['network_err'] = 'Anforderung konnte nicht abgeschlossen werden. Bitte überprüfe deine Internetverbindung';
 $lang['submit_error'] = 'Es gibt einige Fehler in Ihrer Einreichung. Bitte korrigieren Sie sie.';
 $lang['failed'] = 'Gescheitert';
 $lang['email_duplicated'] = 'E-Mail dupliziert';
@@ -83,3 +80,15 @@ $lang['model'] = 'Modell';
 $lang['KM'] = 'Kilometerstand';
 $lang['EZ'] = 'Erstzulassungsjahr';
 $lang['to_car_list'] ='To List';
+
+#datatable
+$lang['no_records_found'] = 'Es wurden keine Datensätze gefunden';
+$lang['no_matching_records'] = 'Keine übereinstimmenden Aufzeichnungen gefunden';
+$lang['no_data_available'] = 'Keine Daten in der Tabelle verfügbar';
+$lang['page'] = 'Seite';
+$lang['records'] = 'Aufzeichnungen';
+$lang['view'] = 'Aussicht';
+$lang['of'] = 'von';
+$lang['records_selected'] = 'Datensätze ausgewählt';
+$lang['total'] = 'Gesamt';
+$lang['loading'] = 'Wird geladen...';
